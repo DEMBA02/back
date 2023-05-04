@@ -21,7 +21,8 @@ export default withAuth(
       //   for more information on what database might be appropriate for you
       //   see https://keystonejs.com/docs/guides/choosing-a-database#title
       provider: 'mysql',
-      url: 'mysql://backendbokoo:backendbokoo@db4free.net:3306/backendbokoo',
+      url: 'db4free.net://backendbokoo:backendbokoo@db4free.net:3306/backendbokoo',
+      
     },
     lists,
     session,
