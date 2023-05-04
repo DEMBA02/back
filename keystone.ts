@@ -21,7 +21,7 @@ export default withAuth(
       //   for more information on what database might be appropriate for you
       //   see https://keystonejs.com/docs/guides/choosing-a-database#title
       provider: 'mysql',
-      url: 'mysql://backendbokoo:backendbokoo@db4free.net:3306/backendbokoo',
+      url: "mysql://b26c6c6d625e1d:a82a125b@us-cdbr-east-06.cleardb.net:3306/heroku_2eead248f616536?reconnect=true,"
       
     },
     lists,
