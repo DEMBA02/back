@@ -463,7 +463,7 @@ var lists = {
 var import_crypto = require("crypto");
 var import_auth = require("@keystone-6/auth");
 var import_session = require("@keystone-6/core/session");
-var sessionSecret = process.env.SESSION_SECRET;
+var sessionSecret = process.env.SESSION_SECRET || "d44f80a6d7a6017b4d2fee1906b2e21acf02a9a0b20e62a1aab2b55a6da49825";
 if (!sessionSecret && process.env.NODE_ENV !== "production") {
   sessionSecret = (0, import_crypto.randomBytes)(32).toString("hex");
 }
@@ -500,7 +500,7 @@ var keystone_default = withAuth(
       //   for more information on what database might be appropriate for you
       //   see https://keystonejs.com/docs/guides/choosing-a-database#title
       provider: "mysql",
-      url: "mysql://root:@localhost:3306/koboo"
+      url: "mysql://backendbokoo:backendbokoo@db4free.net:3306/backendbokoo"
     },
     lists,
     session,
